@@ -17,6 +17,6 @@ func Connect(){
 	db = d
 }
 
-func GetDB() *form.DB{
+func GetDB() *gorm.DB{
 	return db
 }

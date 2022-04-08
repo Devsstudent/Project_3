@@ -1,4 +1,4 @@
-module github.com/Devsstudent/Prjoect_3
+module github.com/Devsstudent/Project_3
 
 go 1.13
 

@@ -1,13 +1,13 @@
 package models
 import(
 	"github.com/jinzhu/gorm"
-	"github.com/akhil/Project_3/pkg/config"
+	"github.com/Devsstudent/Project_3/pkg/config"
 )
 
-var db *form.DB
+var db *gorm.DB
 
 type Book struct{
-	form.Model
+	gorm.Model
 	Name string `gorm:""json:"name"`
 	Author string `json:"author"`
 	Publication string `json:"publication"`
@@ -20,7 +20,7 @@ func init(){
 }
 
 func (b *Book) CreateBook() *Book{
-	db.NewRecod(b)
+	db.NewRecord(b)
 	db.Create(&b)
 	return b
 }
